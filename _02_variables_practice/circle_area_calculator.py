@@ -1,5 +1,5 @@
 import turtle
-from tkinter import messagebox, simpledialog, Tk
+from tkinter import simpledialog, Tk
 import math
 
 # Goal: Write a Python program that asks the user for the radius 
@@ -8,7 +8,7 @@ import math
 #       See example image in package to check your output.
 
 if __name__ == '__main__':
-    window = Tk
+    window = Tk()
     window.withdraw()
     
     # Ask the user for the radius in pixels and store it in a variable
@@ -21,13 +21,13 @@ if __name__ == '__main__':
     ethan.color('blue')
     # Have your turtle draw a circle with the correct radius
     # my_turtle.circle()
-    ethan.circle(num, 100, 100)
+    ethan.circle(num, 360, 50)#
     # Call the turtle .penup() method
     ethan.penup()
     # Move your turtle to a new x,y position using .goto()
     ethan.goto(100, 100)
     # Calculate the area of your circle and store it in a variable, you can use math.pi
-    area = math.pi(num^2)
+    area = math.pi*num**2
     # Write the area of your circle using the turtle .write() method
     # myTurtle.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
     ethan.write('area = '+str(area), True, 'left', ('Arial', 8, 'normal'))
